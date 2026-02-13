@@ -38,6 +38,7 @@ Input:
 9
 Output:
 7 8 9*/
+
 #include <stdio.h>
 
 int main() {
