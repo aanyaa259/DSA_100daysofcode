@@ -19,27 +19,41 @@ Output:
 
 Explanation:
 1 + 5 + 9 = 15*/
+
+
 #include <stdio.h>
+#include <stdbool.h>
 
 int main() {
-    int m, n;
+    int n;
     int mat[100][100];
     
-    scanf("%d %d", &m, &n);
+    scanf("%d", &n);
     
-    for (int i = 0; i < m; i++) {
+    for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             scanf("%d", &mat[i][j]);
         }
     }
     
-    int sum = 0;
-    int minDim = m < n ? m : n;
+    bool isIdentity = true;
     
-    for (int i = 0; i < minDim; i++) {
-        sum += mat[i][i];
+    for (int i = 0; i < n && isIdentity; i++) {
+        for (int j = 0; j < n; j++) {
+            if (i == j) {
+                if (mat[i][j] != 1) {
+                    isIdentity = false;
+                    break;
+                }
+            } else {
+                if (mat[i][j] != 0) {
+                    isIdentity = false;
+                    break;
+                }
+            }
+        }
     }
     
-    printf("%d\n", sum);
+    printf("%s\n", isIdentity ? "Identity Matrix" : "Not an Identity Matrix");
     return 0;
 }
