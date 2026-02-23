@@ -21,6 +21,8 @@ Output:
 
 Explanation:
 Compare nodes of both lists, append smaller to result, continue until all nodes are merged.*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
