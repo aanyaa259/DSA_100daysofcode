@@ -19,6 +19,8 @@ Output:
 
 Explanation:
 Traverse list, find first node with key, remove it by adjusting previous node's next pointer.*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
