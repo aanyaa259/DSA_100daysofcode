@@ -20,6 +20,7 @@ Output:
 Explanation:
 Traverse the linked list from head to end. Each time a node's data matches the given key, increment a counter. After traversal, print the final count.
 */
+
 #include <stdio.h>
 #include <stdlib.h>
 
