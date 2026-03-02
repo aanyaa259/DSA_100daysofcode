@@ -21,6 +21,8 @@ Output:
 
 Explanation:
 Each node stores coefficient and exponent. Traverse nodes to print polynomial in decreasing exponent order.*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
